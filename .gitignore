@@ -1,4 +1,5 @@
 images
-**/.DS_Store
-**/target
+*/.DS_Store
+*/target
 *.lock
+*.json
