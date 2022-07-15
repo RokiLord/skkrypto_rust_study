@@ -16,7 +16,10 @@ impl Balance{
 
     pub fn transfer(&mut self, _to: & mut Balance, _amount:isize){
         
-        
+        if self.amount < _amount {
+            println!("not enough balance");
+            return
+        }
         self.amount -= _amount;
 
         _to.amount += _amount;
